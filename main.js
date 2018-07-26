@@ -878,14 +878,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var TextsharingService = /** @class */ (function () {
     function TextsharingService(http) {
         this.http = http;
-        // private registerURL = 'http://localhost:8888/textsharing/text-sharing-php/register.php';
-        // private pasteURL = 'http://localhost:8888/textsharing/text-sharing-php/paste.php';
-        // private detailURL = 'http://localhost:8888/textsharing/text-sharing-php/detail.php';
-        // private updateURL = 'http://localhost:8888/textsharing/text-sharing-php/update.php';
-        this.registerURL = 'http://pcphat.000webhostapp.com/textsharing/register.php';
-        this.pasteURL = 'http://pcphat.000webhostapp.com/textsharing/paste.php';
-        this.detailURL = 'http://pcphat.000webhostapp.com/textsharing/detail.php';
-        this.updateURL = 'http://pcphat.000webhostapp.com/textsharing/update.php';
+
+        this.registerURL = 'https://pcphat.000webhostapp.com/textsharing/register.php';
+        this.pasteURL = 'https://pcphat.000webhostapp.com/textsharing/paste.php';
+        this.detailURL = 'https://pcphat.000webhostapp.com/textsharing/detail.php';
+        this.updateURL = 'https://pcphat.000webhostapp.com/textsharing/update.php';
     }
     TextsharingService.prototype.addGuest = function (registerData) {
         return this.http.post(this.registerURL, registerData);
