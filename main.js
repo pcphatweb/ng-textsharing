@@ -879,10 +879,10 @@ var TextsharingService = /** @class */ (function () {
     function TextsharingService(http) {
         this.http = http;
 
-        this.registerURL = 'https://pcphat.000webhostapp.com/textsharing/register.php';
-        this.pasteURL = 'https://pcphat.000webhostapp.com/textsharing/paste.php';
-        this.detailURL = 'https://pcphat.000webhostapp.com/textsharing/detail.php';
-        this.updateURL = 'https://pcphat.000webhostapp.com/textsharing/update.php';
+        this.registerURL = 'http://vinatrip.vn/textsharing/register.php';
+        this.pasteURL = 'http://vinatrip.vn/textsharing/paste.php';
+        this.detailURL = 'http://vinatrip.vn/textsharing/detail.php';
+        this.updateURL = 'http://vinatrip.vn/textsharing/update.php';
     }
     TextsharingService.prototype.addGuest = function (registerData) {
         return this.http.post(this.registerURL, registerData);
